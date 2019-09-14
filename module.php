@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if(isset($_SESSION["name"]))
@@ -25,7 +26,7 @@ if(isset($_SESSION["name"]))
 <ul>
    <li>HOME</li>
    <li>ABOUT US</li>
-   <li><a href="REG.php">RIGISTRATION</a></li>
+   <li><a href="REG.php">REGISTRATION</a></li>
    <li>CONTACT</li>
 </ul>
 </div>
@@ -35,7 +36,7 @@ if(isset($_SESSION["name"]))
 
 <table >
 <tr><th>LOGIN ID</th><td><input type="text" name="log"></td></tr>
-<tr><th>PASSWORD</th><td><input type="text" name="cont"></td></tr>
+<tr><th>PASSWORD</th><td><input type="password" name="cont"></td></tr>
 <tr><th>Type</th><td>
 <select name="type">
 <option>admin</option>
