@@ -6,6 +6,9 @@ if(isset($_SESSION["name"]) && ($_SESSION["type"]=='admin'))
 <html>
 <head>
 <style>
+body{
+  background-image: url("gradient.jfif");
+}
 table,th,td
 {
 border:1px solid black;
@@ -17,7 +20,8 @@ padding:10px 10px 10px 10px;
 <body> 
 <form action="" method="get">
 	<a href="logout.php">logout</a>
-<table> 
+<center>
+<table style="color : green"> 
 
 <tr>
 <th>Id</th>
@@ -36,7 +40,7 @@ padding:10px 10px 10px 10px;
 
 include("call.php");
 
-echo " <center><h1> welcome ".$_SESSION['name']."</h1></center>";
+echo " <center><h1><u>Welcome ".strtoupper($_SESSION['name'])."</u></h1></center>";
 
 $total=mysqli_query($abc,"select * from registration1 ");
 
@@ -63,7 +67,7 @@ echo "</tr>";
 }
 ?>
 </table>
-
+</center>
 </form>
 </body>
 </html>
@@ -71,15 +75,21 @@ echo "</tr>";
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>
+body{
+  background-image: url("gradient.jfif");
+}
+</style>
 </head>
 <body>
 <form action="" method="post">
+<center>
 	<table>
 		<tr><th>enter id</th><td><input type="text" name="id"></td></tr>
 		<tr><th></th><td><input type="submit" name="id1" value="active">
 		<input type="submit" name="id2" value="inactivite"></td></tr>
 	</table>
+</center>
 </form>
 </body>
 </html>
