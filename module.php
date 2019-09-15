@@ -20,10 +20,15 @@ if(isset($_SESSION["name"]))
 <html>
 <head>
 <link rel="stylesheet" href="module1.css">
+<style>
+table,tb,th{
+	color : red;
+}
+</style>
 </head>
-<body>
+<body style="background-image:url('clouds.jfif');">
 		<div id="four">
-<ul>
+<ul style="color:red">
    <li>HOME</li>
    <li>ABOUT US</li>
    <li><a href="REG.php">REGISTRATION</a></li>
